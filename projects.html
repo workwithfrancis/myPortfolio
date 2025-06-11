@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-indigo-400">Your Name</a>
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="hover:text-indigo-300">Home</a>
+                <a href="about.html" class="hover:text-indigo-300">About</a>
+                <a href="projects.html" class="text-indigo-400 font-semibold">Projects</a>
+                <a href="contact.html" class="hover:text-indigo-300">Contact</a>
+            </div>
+        </div>
+        <div class="md:hidden hidden pt-4" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm text-indigo-400 font-semibold bg-gray-800">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-10 p-6">
+        <section>
+            <h1 class="text-4xl font-bold mb-12 text-center text-indigo-600">My Projects</h1>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/E2E8F0/A0AEC0?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Project Title 1</h3>
+                        <p class="text-gray-700 mb-4">A short description of the project. What it does, technologies used, etc.</p>
+                        <a href="#" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/D1FAE5/34D399?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Project Title 2</h3>
+                        <p class="text-gray-700 mb-4">Another cool project. Highlight key features and your role in it.</p>
+                        <a href="#" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 (Add more as needed) -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/FEF3C7/FBBF24?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Project Title 3</h3>
+                        <p class="text-gray-700 mb-4">Details about the third project. What challenges did you overcome?</p>
+                        <a href="#" class="inline-block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition duration-300">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6 mt-10">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

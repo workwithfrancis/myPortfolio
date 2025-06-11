@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold hover:text-indigo-400">Abiaziem Ebubechukwu Francis</a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-indigo-400 font-semibold">Home</a>
+                <a href="about.html" class="hover:text-indigo-300">About</a>
+                <a href="projects.html" class="hover:text-indigo-300">Projects</a>
+                <a href="contact.html" class="hover:text-indigo-300">Contact</a>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden pt-4" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm text-indigo-400 font-semibold bg-gray-800">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <header class="bg-indigo-600 text-white py-20 md:py-32">
+            <div class="container mx-auto text-center px-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+                <p class="text-lg md:text-xl mb-8">I'm a [Your Profession/Title] passionate about creating amazing digital experiences.</p>
+                <a href="projects.html" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-200 transition duration-300">View My Work</a>
+            </div>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">Hi, I'm [Your Name]!</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+                    A brief introduction about yourself. Mention your key skills or what you love to do. 
+                    This is a great place to make a first impression.
+                </p>
+                <a href="about.html" class="text-indigo-600 hover:text-indigo-800 font-semibold text-lg">Learn More About Me &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-16 bg-gray-200">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800">Interested in working together?</h2>
+                <p class="text-lg text-gray-700 max-w-xl mx-auto mb-8">
+                    I'm always open to discussing new projects or collaboration opportunities.
+                </p>
+                <a href="contact.html" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Get In Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6 mt-auto">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
